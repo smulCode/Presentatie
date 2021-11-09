@@ -168,6 +168,10 @@ section {
   font-size: 1.3em;
 }
 
+.Wesley-content ol {
+  cursor: pointer;
+}
+
 .problem-steps {
   margin: 1em 0;
 }
