@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
 // _base.scss
 $bg-clr: #fefefe;
 $text-clr: #111;
-$text-clr2: rgb(97, 135, 216);
+$text-clr2: steelblue;
 $text-clr3: rgb(128, 179, 128);
-$font-stack: "Lobster", cursive;
+$font-stack2: "Lobster", cursive;
+$font-stack: "Poppins", sans-serif;
 $bg-green-clr: rgb(128, 179, 128);
 
 * {
@@ -25,10 +26,6 @@ body {
   color: $text-clr;
 }
 
-li {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
   font-family: $font-stack;
@@ -46,6 +43,10 @@ header {
   align-items: center;
   padding: 1rem 1.5rem;
   background-color: $bg-clr;
+
+  li {
+    list-style: none;
+  }
 }
 
 .nav-menu {
@@ -139,17 +140,54 @@ header {
   color: $text-clr2;
 }
 
-
-section{
-    height: 100vh;
-    border: 10px solid steelblue;
-    
+section {
+  height: 100vh;
+  border: 10px solid steelblue;
 }
 .block {
-    margin: 1em 10vw;
-    padding: 0 10vw;
+  margin: 1em 10vw;
+  padding: 0 5vw;
 }
 
+/// Content Wesley **
+
+.Wesley-content {
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+.problem-steps {
+  margin: 1em 0;
+
+  h2 {
+    font-size: 1.5;
+  }
+  h3 {
+    font-size: 1.4;
+    font-weight: 600;
+  }
+}
+.problem-quote {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: $text-clr2;
+}
+
+.problem-list {
+  font-weight: 600;
+}
+
+.details-list {
+  li {
+    list-style-type: square;
+    margin: 1em 0 1em 2em;
+    font-size: 1em;
+    font-weight: 500;
+  }
+}
+
+/////
 //media queries
 @media only screen and (min-width: 1020px) {
   header {
@@ -157,7 +195,6 @@ section{
     position: fixed;
     width: 100%;
   }
-
 
   .navbar {
     display: flex;
@@ -206,6 +243,4 @@ section{
     width: 40%;
     font-size: 1.5em;
   }
-
-
 }
