@@ -172,6 +172,39 @@ section {
   cursor: pointer;
 }
 
+.Michael-content {
+  background-image: url("../img/ComputationalThinking.png");
+  background-color: #cccccc;
+  height: 700px;
+  background-position: right 100px;
+  background-repeat: no-repeat;
+}
+
+.Michael-content H3{
+  color: black;
+  text-shadow: 1px 1px orange;
+  font-size: 40px;
+}
+
+.Michael-content p{
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  color: black;
+  text-shadow: 1px 1px orange;
+  font-size: 20px;
+}
+
+.MichaelStappen {
+  position: relative;
+  margin-top: 100px;
+  background-image: url("../img/paper.jpg");  ; 
+  height: 300px;
+  width: 500px;
+  box-shadow: 5px 5px orange;
+}
+
+
 .problem-steps {
   margin: 1em 0;
 }
