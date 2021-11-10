@@ -3,7 +3,7 @@
 // _base.scss
 $bg-clr: #fefefe;
 $text-clr: #111;
-$text-clr2: steelblue;
+$text-clr2: #4682b4;
 $text-clr3: rgb(128, 179, 128);
 $font-stack2: "Lobster", cursive;
 $font-stack: "Poppins", sans-serif;
@@ -141,12 +141,45 @@ header {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   border: 10px solid steelblue;
 }
 .block {
   margin: 1em 10vw;
   padding: 0 5vw;
+}
+//content michael//
+
+.Michael-content {
+  background-image: url("../img/ComputationalThinking.png");
+  background-color: #cccccc;
+  height: 700px;
+  background-position: right 100px;
+  background-repeat: no-repeat;
+}
+
+.Michael-content H3 {
+  color: black;
+  text-shadow: 1px 1px orange;
+  font-size: 40px;
+}
+
+.Michael-content p {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  color: black;
+  text-shadow: 1px 1px orange;
+  font-size: 20px;
+}
+
+.MichaelStappen {
+  position: relative;
+  margin-top: 100px;
+  background-image: url("../img/paper.jpg");
+  height: 300px;
+  width: 500px;
+  box-shadow: 5px 5px orange;
 }
 
 /// Content Wesley **
@@ -180,6 +213,13 @@ section {
 
 .problem-list {
   font-weight: 600;
+  li {
+    color: $text-clr;
+  }
+}
+
+.problem-details {
+  color: $text-clr2;
 }
 
 .details-list {
@@ -189,6 +229,27 @@ section {
     font-size: 1em;
     font-weight: 500;
   }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.diagram-content {
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  right: 0;
+}
+.img-diagram {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
+  opacity: 0.9;
 }
 
 /////
@@ -244,7 +305,14 @@ section {
     text-align: center;
     height: 100%;
     box-shadow: none;
-    width: 40%;
+    max-width: 60%;
     font-size: 1.5em;
+  }
+
+  .diagram-content {
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    right: 10%;
   }
 }

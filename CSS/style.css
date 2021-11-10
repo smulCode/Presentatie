@@ -98,7 +98,7 @@ header {
 }
 
 .nav-link:hover {
-  color: steelblue;
+  color: #4682b4;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-bottom: 1px solid #ccc;
@@ -151,25 +151,17 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: steelblue;
+  color: #4682b4;
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   border: 10px solid steelblue;
 }
 
 .block {
   margin: 1em 10vw;
   padding: 0 5vw;
-}
-
-.Wesley-content h2 {
-  font-size: 1.3em;
-}
-
-.Wesley-content ol {
-  cursor: pointer;
 }
 
 .Michael-content {
@@ -180,13 +172,13 @@ section {
   background-repeat: no-repeat;
 }
 
-.Michael-content H3{
+.Michael-content H3 {
   color: black;
   text-shadow: 1px 1px orange;
   font-size: 40px;
 }
 
-.Michael-content p{
+.Michael-content p {
   position: absolute;
   left: 25px;
   top: 25px;
@@ -198,10 +190,19 @@ section {
 .MichaelStappen {
   position: relative;
   margin-top: 100px;
-  background-image: url("../img/paper.jpg");  ; 
+  background-image: url("../img/paper.jpg");
   height: 300px;
   width: 500px;
-  box-shadow: 5px 5px orange;
+  -webkit-box-shadow: 5px 5px orange;
+          box-shadow: 5px 5px orange;
+}
+
+.Wesley-content h2 {
+  font-size: 1.3em;
+}
+
+.Wesley-content ol {
+  cursor: pointer;
 }
 
 .problem-steps {
@@ -220,11 +221,19 @@ section {
 .problem-quote {
   font-size: 1.5em;
   font-weight: 600;
-  color: steelblue;
+  color: #4682b4;
 }
 
 .problem-list {
   font-weight: 600;
+}
+
+.problem-list li {
+  color: #111;
+}
+
+.problem-details {
+  color: #4682b4;
 }
 
 .details-list li {
@@ -232,6 +241,36 @@ section {
   margin: 1em 0 1em 2em;
   font-size: 1em;
   font-weight: 500;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.diagram-content {
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  right: 0;
+}
+
+.img-diagram {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+  opacity: 0.9;
 }
 
 @media only screen and (min-width: 1020px) {
@@ -296,8 +335,14 @@ section {
     height: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
-    width: 40%;
+    max-width: 60%;
     font-size: 1.5em;
+  }
+  .diagram-content {
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    right: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
